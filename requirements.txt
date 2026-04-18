@@ -1,6 +1,5 @@
 pandas
 numpy
-matplotlib
 twostep_nardl
 io
 contextlib
