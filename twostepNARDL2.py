@@ -38,8 +38,8 @@ st.markdown(
 
     /* Targeting all text elements with higher specificity */
     .stApp, .stApp p, .stApp h1, .stApp h2, .stApp h3, .stApp span, .stApp label, .stApp div {
-        color: #8B4513 !important; /* SaddleBrown - less 'orange' than Brown */
-        font-weight: 900 !important; /* Extremely bold */
+        color: #ff4f00 !important; /* SaddleBrown - less 'orange' than Brown */
+        font-weight: 900 !important; /* bold */
         -webkit-text-stroke: 0.5px #8B4513; /* Thickens the font appearance */
     }
 
