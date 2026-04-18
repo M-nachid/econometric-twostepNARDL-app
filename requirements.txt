@@ -1,5 +1,5 @@
+streamlit
 pandas
 numpy
-twostep_nardl
-io
-contextlib
+matplotlib
+twostep-nardl
