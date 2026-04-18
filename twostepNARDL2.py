@@ -14,37 +14,37 @@ import contextlib
 st.set_page_config(page_title="NARDL Analysis Tool", layout="wide")
 
 # Custom CSS for the "Colored Terminal" look
-st.markdown("""
-    <style>
-    .terminal-container {
-        background-color: #1e1e1e;
-        color: #d4d4d4;
-        padding: 15px;
-        border-radius: 8px;
-        font-family: 'Courier New', monospace;
-        border-left: 5px solid #00ffcc;
-        margin-bottom: 20px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-#st.markdown(
-    #"""
+#st.markdown("""
     #<style>
-    #/* This targets the main app container */
-    #.stApp {
-        #background-color: #000000;
-    #}
-
-    #/* This targets all text elements and makes them bold and brown */
-    #.stApp p, .stApp h1, .stApp h2, .stApp h3, .stApp span, .stApp label {
-        #color: #A52A2A !important;
-        #font-weight: bold !important;
+    #.terminal-container {
+        #background-color: #1e1e1e;
+        #color: #d4d4d4;
+        #padding: 15px;
+        #border-radius: 8px;
+        #font-family: 'Courier New', monospace;
+        #border-left: 5px solid #00ffcc;
+        #margin-bottom: 20px;
     #}
     #</style>
-    #""",
-    #unsafe_allow_html=True
-#)
+    #""", unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <style>
+    /* This targets the main app container */
+    .stApp {
+        background-color: #000000;
+    }
+
+    /* This targets all text elements and makes them bold and brown */
+    .stApp p, .stApp h1, .stApp h2, .stApp h3, .stApp span, .stApp label {
+        color: #A52A2A !important;
+        font-weight: bold !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 st.title("📈 Nonlinear ARDL (Two-Step) Dashboard")
