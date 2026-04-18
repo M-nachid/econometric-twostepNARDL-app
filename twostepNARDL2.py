@@ -31,15 +31,22 @@ st.set_page_config(page_title="NARDL Analysis Tool", layout="wide")
 st.markdown(
     """
     <style>
-    /* This targets the main app container */
+    /* Main container background */
     .stApp {
-        background-color: #000000;
+        background-color: #000000 !important;
     }
 
-    /* This targets all text elements and makes them bold and brown */
-    .stApp p, .stApp h1, .stApp h2, .stApp h3, .stApp span, .stApp label {
-        color: #A52A2A !important;
-        font-weight: bold !important;
+    /* Targeting all text elements with higher specificity */
+    .stApp, .stApp p, .stApp h1, .stApp h2, .stApp h3, .stApp span, .stApp label, .stApp div {
+        color: #8B4513 !important; /* SaddleBrown - less 'orange' than Brown */
+        font-weight: 900 !important; /* Extremely bold */
+        -webkit-text-stroke: 0.5px #8B4513; /* Thickens the font appearance */
+    }
+
+    /* Specifically target sidebar labels if they aren't changing */
+    [data-testid="stWidgetLabel"] p {
+        color: #8B4513 !important;
+        font-weight: 900 !important;
     }
     </style>
     """,
