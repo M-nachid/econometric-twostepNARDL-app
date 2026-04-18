@@ -19,9 +19,9 @@ st.set_page_config(page_title="NARDL Analysis Tool", layout="wide")
     #.terminal-container {
         #background-color: #1e1e1e;
         #color: #ff4500;
-        #padding: 15px;
-        #border-radius: 8px;
-        #font-family: 'Courier New', monospace;
+        #padding: 14px;
+        #border-radius: 6px;
+        #font-family: 'Times New Roman', monospace;
         #border-left: 5px solid #00ffcc;
         #margin-bottom: 20px;
     #}
