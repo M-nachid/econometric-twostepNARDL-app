@@ -71,7 +71,7 @@ if uploaded_file:
         df.index = pd.to_datetime(df.index)
     else:
         st.sidebar.warning("No index column selected. Generating manual time index...")
-        freq_map = {"Monthly": "M", "Quarterly": "Q", "Annual": "A"}
+        freq_map = {"Monthly": "ME", "Quarterly": "QE", "Annual": "YE"}
         freq_choice = st.sidebar.selectbox("Select Frequency", list(freq_map.keys()))
         start_date = st.sidebar.date_input("Start Date", value=pd.to_datetime("2000"))
 
